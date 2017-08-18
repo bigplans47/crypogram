@@ -38,13 +38,22 @@ for (i=0; i<=dimensions; i++) {
   masterArray[i] = string.slice(index1,index2);
   index1=index1+dimensions-1;
   index2=index2+dimensions-1;
-  console.log(masterArray[i]);
+}
+index=0
+  for (i=0; i < masterArray.length; i++) {
+    for (e=0; e<masterArray.length -1; e++) {
+      current=masterArray[i];
+      alert(current[e]);
+    }
+index=index+1;
+alert(current[i] + "second alert");
 }
 
+// masterArray.text(i);
 
 
-
-console.log(masterArray);
+// console.log(masterArray);
+// console(masterArray[1]);
 
 
 
