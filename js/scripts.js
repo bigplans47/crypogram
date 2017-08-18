@@ -39,14 +39,14 @@ for (i=0; i<=dimensions; i++) {
   index1=index1+dimensions-1;
   index2=index2+dimensions-1;
 }
-index=0
-  for (i=0; i < masterArray.length; i++) {
-    for (e=0; e<masterArray.length -1; e++) {
-      current=masterArray[i];
-      alert(current[e]);
+count=0
+  for (element=0; element < masterArray.length; element++) {
+    for (index=0; index<masterArray.length -1; index++) {
+      current=masterArray[element];
+      alert(current[index]);
     }
-index=index+1;
-alert(current[i] + "second alert");
+count=count+1;
+alert(current[element] + count+ " alert");
 }
 
 // masterArray.text(i);
